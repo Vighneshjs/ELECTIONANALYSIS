@@ -246,3 +246,16 @@ footer {
         max-width: 100%;
     }
 }
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    header {
+        padding: 50px; /* Adjust padding for mobile */
+    }
+
+    #name {
+        bottom: 10px; /* Align name to the bottom */
+        left: 10px;   /* Align name to the left */
+        font-size: 0.9em; /* Slightly smaller font size */
+    }
+}
+
