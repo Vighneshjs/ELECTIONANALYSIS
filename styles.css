@@ -289,5 +289,37 @@ html, body {
         font-size: 0.9em; /* Slightly smaller font size */
     }
 }
+/* Existing CSS styles above */
+
+/* Ensure No Horizontal Scroll */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.chart-container, .large-content {
+    max-width: 100%;
+    overflow-x: auto; /* Ensure large charts or content scroll on smaller screens */
+}
+
+/* Hide horizontal scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Add this media query to handle smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 50px; /* Adjust padding for mobile */
+    }
+
+    #name {
+        bottom: 40px; /* Adjust to align with the button */
+        left: 10px;   /* Keep the name aligned to the left */
+        font-size: 0.9em; /* Slightly smaller font size */
+    }
+}
+
 
 
