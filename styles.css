@@ -284,7 +284,7 @@ html, body {
     }
 
     #name {
-        bottom: 10px; /* Adjust for smaller screens */
+        bottom: 90px; /* Adjust for smaller screens */
         left: 10px; /* Adjust for smaller screens */
         font-size: 0.9em; /* Slightly smaller font size */
     }
@@ -315,7 +315,7 @@ html, body {
     }
 
     #name {
-        bottom: 40px; /* Adjust to align with the button */
+        bottom: 90px; /* Adjust to align with the button */
         left: 10px;   /* Keep the name aligned to the left */
         font-size: 0.9em; /* Slightly smaller font size */
     }
@@ -346,7 +346,7 @@ html, body {
     }
 
     #name {
-        bottom: 40px; /* Adjust to align with the button */
+        bottom: 90px; /* Adjust to align with the button */
         left: 10px;   /* Keep the name aligned to the left */
         font-size: 0.9em; /* Slightly smaller font size */
     }
