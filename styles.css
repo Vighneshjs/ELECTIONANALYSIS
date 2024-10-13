@@ -239,6 +239,7 @@ footer {
     }
   
     .major-project-btn {
+      background-color: #ffcc00;  
       margin-top: 40px; /* Increase margin or padding to separate the button */
     }
   
@@ -269,6 +270,7 @@ footer {
     }
   
     header .major-project-button {
+      background-color: #ffcc00; 
       margin-top: 20px; /* Add space between the name and the button */
     }
   }
