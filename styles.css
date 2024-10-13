@@ -522,7 +522,7 @@ header h1, header p {
 .search-container {
     position: absolute;  /* Fixes the navigation in place */
     top: 20px;        /* Adjust this value based on where the yellow marker is */
-    left: 580px;       /* Adjust this value to fit the yellow marker's position */
+    left: 323px;       /* Adjust this value to fit the yellow marker's position */
     z-index: 1000;    /* Ensures the navigation is above other elements */
     display: flex;               /* Use flexbox to align items */
     align-items: center;        /* Center items vertically */
