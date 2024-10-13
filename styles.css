@@ -480,3 +480,122 @@ header h1, header p {
 .project-button:hover {
     background-color: #555; /* Change background on hover */
 }
+/* Navigation Bar Styles */
+.navigation {
+    position: absolute;  /* Fixes the navigation in place */
+    top: 20px;        /* Adjust this value based on where the yellow marker is */
+    left: 10px;       /* Adjust this value to fit the yellow marker's position */
+    z-index: 1000;    /* Ensures the navigation is above other elements */
+    display: flex;               /* Use flexbox to align items */
+    align-items: center;        /* Center items vertically */
+    justify-content: center;    /* Center items horizontally */
+    background-color: #000;    /* Black background for the nav */
+    color: white;               /* Text color */
+    width: 100%;                /* Full width of the viewport */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    animation: fadeIn 1s;      /* Fade-in animation */
+    margin-bottom: 100px;       /* Space below the nav */
+}
+
+/* Navigation Item Styles */
+.nav-item {
+    margin: 0 5px;            /* Space between items */
+    cursor: default;           /* Change cursor to indicate no action */
+}
+
+.nav-separator {
+    margin: 0 5px;             /* Space for the separator */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-70px); /* Slide in from the top */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(90);
+    }
+}
+/* Search Bar Container Styles */ 
+.search-container {
+    position: absolute;  /* Fixes the navigation in place */
+    top: 20px;        /* Adjust this value based on where the yellow marker is */
+    left: 322px;       /* Adjust this value to fit the yellow marker's position */
+    z-index: 1000;    /* Ensures the navigation is above other elements */
+    display: flex;               /* Use flexbox to align items */
+    align-items: center;        /* Center items vertically */
+    display: flex;               /* Flexbox to align items */
+    justify-content: center;     /* Center the search bar horizontally */
+    margin-top: 70px;            /* Add margin to create space below the navbar */
+    padding: 10px;               /* Add padding to give space around the search bar */
+    background-color: #000000;   /* Light background for the search bar container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Search Input Field Styles */
+.search-container input[type="text"] {
+    padding: 10px;               /* Space inside the search input */
+    font-size: 16px;             /* Text size */
+    border: 1px solid #ccc;      /* Light border */
+    border-radius: 5px;          /* Rounded corners */
+    width: 300px;                /* Width of the search bar */
+    margin-right: 10px;          /* Space between the search input and button */
+}
+
+/* Search Button Styles */
+.search-container button {
+    padding: 10px 15px;          /* Space inside the button */
+    background-color: #000;      /* Black background */
+    color: white;                /* White text */
+    border: none;                /* Remove borders */
+    border-radius: 5px;          /* Rounded corners */
+    cursor: pointer;             /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+.search-container button:hover {
+    background-color: #0056b3; /* Change background on hover */
+    transform: scale(1.05); /* Slightly increase size */
+}
+
+/* Add a keyframe animation for the button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Scale up */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation for the button when focused */
+.search-container button:focus {
+    animation: pulse 0.6s ease; /* Trigger pulse animation on focus */
+}
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;   /* Stack the search bar and button vertically on small screens */
+        align-items: center;      /* Center align the items */
+        margin-top: 60px;        /* Reduced margin-top for positioning closer to the top */
+        width: 100%;              /* Make the search bar full width on mobile */
+        position: absolute;        /* Use absolute positioning for centering */
+        top: 0;                   /* Position at the top of the screen */
+        left: 50%;                /* Position from the left center */
+        transform: translateX(-50%); /* Center it horizontally */
+    }
+
+    .search-container input[type="text"], .search-container button {
+        width: 90%;               /* Use a percentage width for mobile */
+        margin-right: 0;          /* Remove right margin on mobile */
+        margin-bottom: 10px;      /* Add space between input and button on mobile */
+    }
+    
+}
+
+
