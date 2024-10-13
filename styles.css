@@ -239,7 +239,6 @@ footer {
     }
   
     .major-project-btn {
-      background-color: #ffcc00;  
       margin-top: 40px; /* Increase margin or padding to separate the button */
     }
   
@@ -270,7 +269,6 @@ footer {
     }
   
     header .major-project-button {
-      background-color: #ffcc00; 
       margin-top: 20px; /* Add space between the name and the button */
     }
   }
@@ -368,4 +366,117 @@ body, html {
         display: block;
         margin: 0 auto;  /* Center the dropdown button */
     }
+}
+
+
+/* Ensure background fills the viewport */
+header {
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding if needed */
+    background-color: #000; /* Black background */
+    color: white;
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    box-sizing: border-box;
+}
+
+/* Adjust background color for mobile view */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 100vh; /* Ensure it fills the viewport in mobile */
+        padding: 80px 10px;
+    }
+}
+
+/* Fix width issues */
+.section-cream {
+    background-color: #f5f5dc; /* Grayish cream color */
+    width: 100vw; /* Full width */
+    box-sizing: border-box;
+}
+/* Styling the project button with glow and pulsating effect */
+.project-button {
+    background-color: #444; /* Gray background for the button */
+    color: white;
+    padding: 12px 25px; /* Slightly larger padding */
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px; /* Add margin between button and text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Initial subtle glow */
+    animation: pulse 1.5s infinite ease-in-out; /* Pulsating animation */
+}
+
+.project-button:hover {
+    background-color: #555; /* Change background on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Stronger glow on hover */
+}
+
+/* Pulsating animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        transform: scale(1.05); /* Slight zoom effect */
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); /* Stronger glow during pulse */
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Return to original size */
+    }
+}
+/* Ensure background fills the viewport */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the content vertically */
+    text-align: center;
+    padding: 0; /* Remove extra padding */
+    background-color: #000; /* Black background */
+    color: white;
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    box-sizing: border-box;
+}
+
+/* Ensure the text in the header is vertically and horizontally centered */
+header h1, header p {
+    margin: 10px 0; /* Adjust margin between text */
+}
+
+/* Adjust background color for mobile view */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 100vh; /* Ensure it fills the viewport in mobile */
+        padding: 0;
+    }
+}
+
+/* Styling the project button */
+.project-button {
+    background-color: #444; /* Gray background for the button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px; /* Add margin between button and text */
+}
+
+.project-button:hover {
+    background-color: #555; /* Change background on hover */
 }
